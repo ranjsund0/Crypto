@@ -1,0 +1,38 @@
+h1 {text-align: center;
+    color: black;
+}
+.bg-white {
+    background-color: white;
+    box-shadow: black 10px 10px 10px;
+}
+.bg-silver {
+    background-color: rgb(100, 99, 99);
+}
+.white a {
+    color: white !important;
+}
+.p-20 {
+    padding: 20px;
+}
+.login-bg {
+    opacity: 0.6;
+    background-image: url("../AdobeStock_275281521-1-1.jpeg");
+    padding: 50px; 
+}
+.bg-color {
+    background-color: rgb(97, 83, 5);
+    
+    padding: 50px; 
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.vertigo {
+    vertical-align: top;
+}
+
+/* .margin {
+    margin-top: 100px;
+} */

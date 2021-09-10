@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Crypto</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+</head>
+<body>
+    <div class="container-fluid bg-color">
+    <div class="container bg-white p-20">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid bg-silver white">
+              <a class="navbar-brand" href="#">Crypto 101</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/data">Data</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    {% if messages %}
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    {% endif %}
+
+    <h1>What is cryptocurrency?</h1>
+
+    <p>Cryptocurrency is a digital currency that does not have a physical form. It is completely virtual. It is decentralized meaning that governments, banks, or any third parties do not regulate or are not involved in the transactions. There are thousands of different cryptocurrencies. It is best to research the individual ones a person is interested in because they have different values and possible different properties.
+    </p>
+    <p>Although the theory was developed earlier, the first actual cryptocurrency that was available to the public was Bitcoin in 2009, according to Forbes. The founder is known as Satoshi Nakamoto.
+    </p>
+    <p>Each transaction is recorded in a specific type of database known as blockchain. Oxford Language definition of blockchain is "a system in which a record of transactions made in bitcoin or another cryptocurrency are maintained across several computers that are linked in a peer-to-peer network." This makes it very difficult to duplicate transactions. When making transactions, the individuals will receive a public and private key which are similar to long passwords. The public key is used to send the transaction to a person's public address which can be related to a bank account. Only the person with the private key can obtain the currency. These keys are usually kept what's called a digital wallet. It is not possible to duplicate the private key. If it's lost, then the currency is lost forever also.
+        
+    There is a debate on whether transactions are secure. There is typically a digital trail, but digital wallets make them harder to trace. The potental for criminal activity is also there. criminals use it for money laundering and other illegal activities. 
+    </p>
+    <p>Many people have and are currently investing in cryptocurrencies. Some cryptocurrencies have a finite number, such as bitcoin,being produced made making it a similar asset to gold. Other currencies have a an infinite amount being produced, such as dogecoin. Still others have a fixed amount produced per year, such as etherium. 
+    </p>
+    <p>As per the IRS website, most virtual currency exchanges are taxable. Please see here for specific rules. https://www.irs.gov/businesses/small-businesses-self-employed/virtual-currencies.
+    </p>
+    <p>There are environmental concerns about how cryptcurrcies are produced. Some are mined such as bitcoin. Mining is solving complex math problems by high energy consumption computers. When the problem is solved, the individual or group who validates the result receive the bitcoin. Another way of producing cryptocurrency is called proof of stake. This means that certain individuals or groups validate the transactions according to the number of cryptocurrency they currenlty own. Therefore, instead of many computers competing and using energy only certain ones will. The following link has some statistics, https://www.theguardian.com/technology/2021/feb/27/bitcoin-mining-electricity-use-environmental-impact. add dogecoin and ethereum here.
+    </p>
+    <p>I have included some data about the top 10 cryptocurrencies according from a website called coingecko. Please see <a href="/data">click here for table!</a>here for a table of information for the top 10 cryptocurrencies by marketcap. For each cryptocurrency, marketcap is the total value of mined coins. The calculation is from multiplying the total amount of the circulating supply by the price of an individual coin. </p>
+
+
+
+    <p>There are certian online brokerages and exchanges people can go to in order to buy cryptocurrency. A person will also need a digital wallet which some of these sights provide. Below I have included a list of links for further reading. I have also included a list of brokerages and exchanges. 
+    </p>
+
+
+    <div class="row"> <div class="col-sm-6 inline-block vertigo">
+    <h2>Further Reading</h2>
+
+    <a href="https://www.forbes.com/advisor/investing/what-is-cryptocurrency/">https://www.forbes.com/advisor/investing/what-is-cryptocurrency</a><br>
+    <a href="https://www.investopedia.com/cryptocurrency-4427699/">https://www.investopedia.com/cryptocurrency-4427699/</a><br>
+    <a href="https://www.consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams">https://www.consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams</a><br>
+    <a href="https://www.nerdwallet.com/article/investing/cryptocurrency-7-things-to-know">
+    https://www.nerdwallet.com/article/investing/cryptocurrency-7-things-to-know</a><br>
+    <a href="https://www.nimera.io/blog/crypto-fixed-vs-unlimted-supply">https://www.nimera.io/blog/crypto-fixed-vs-unlimted-suppl</a>
+    <br>
+    <a href="https://www.coingecko.com/en">https://www.coingecko.com/en</a><br>
+    
+
+    <h2>Online Brokerages and Exchanges</h2>
+
+    <a href="https://www.sofi.com/">https://www.sofi.com/</a><br>
+    <a href="https://www.webull.com/">https://www.webull.com/</a><br>
+    <a href="https://www.gemini.com/">https://www.gemini.com/</a><br>
+    <a href="https://www.coinbase.com/">https://www.coinbase.com/</a><br>
+    <a href="https://robinhood.com/us/en/">https://robinhood.com/us/en/</a><br>
+</div>
+<div class="col-sm-1 inline-block"> <img src="../static/8crypto.png" width="500" height="400" alt="crypto"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
